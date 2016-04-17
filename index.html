@@ -1,19 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="wallpaper"></div>
-        <div class="blank"></div>
-        <div class="page-title">
-            <h1>
-                Tim Osadchiy<span class="highlight">'s</span>
-            </h1>
-            <p>Welcoming page. Please come back <span class="highlight">soon</span>.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>4Corners</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            background: #fafafa;
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.8em;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 300;
+            font-size: 1.7em;
+            color: #172839;
+        }
+
+        p {
+            color: #444;
+        }
+
+        a,
+        a:visited {
+            color: #064178;
+            text-decoration: none;
+            -webkit-transition: color .15s linear;
+            -moz-transition: color .15s linear;
+            -ms-transition: color .15s linear;
+            -o-transition: color .15s linear;
+            transition: color .15s linear;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #062f5e;
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin: 0;
+        }
+
+        .media-object img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+        }
+
+        .container {
+            width: 600px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .media {
+            display: table;
+        }
+
+        .media-object,
+        .media-body {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .media-object img {
+            margin-right: 20px;
+        }
+
+        .logos {
+            display: table;
+        }
+
+        .logos a {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .logos a img {
+            max-width: 100%;
+            max-height: 50px;
+        }
+
+        .logos a:not(:last-child) img {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                text-align: center;
+            }
+
+            .media-object,
+            .media-body {
+                display: block;
+            }
+
+            .media-object {
+                text-align: center;
+            }
+        }
+
+        .label {
+            font-weight: 500;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="media">
+        <div class="media-object">
+            <img src="img/photo.jpg" alt="Tim Osadchiy">
         </div>
-        <script type="application/javascript" src="js/jquery.min.js"></script>
-        <script type="application/javascript" src="js/bootstrap.min.js"></script>
-    </body>
+        <div class="media-body">
+            <h1>
+                Tim Osadchiy: Ph.D. Researcher
+            </h1>
+            <p class="contact">
+                <a href="mailto:t.osadchiy@ncl.ac.uk">t.osadchiy@ncl.ac.uk</a>
+            </p>
+            <p>
+                Proud member of the Machine Learning group at the
+                <a href="https://openlab.ncl.ac.uk/">Open Lab</a>,
+                <a href="http://www.ncl.ac.uk/computing/">School of Computing Science</a>,
+                <a href="http://www.ncl.ac.uk/">Newcastle University</a>
+            </p>
+            <p>
+                <span class="label">Research interest:</span>
+                Opportunistic and self-organised communication and authentication in the Internet of
+                Things
+            </p>
+            <p>
+                <span class="label">About me:</span>
+                UX Expert, Machine teacher, Project and Program manager, Full stack web developer, Security
+                background
+            </p>
+            <p class="logos">
+                <a href="https://openlab.ncl.ac.uk/">
+                    <img src="img/openlablogo.png" alt="Open Lab at Newcastle University">
+                </a>
+                <a href="http://www.ncl.ac.uk/">
+                    <img src="img/nulogo.png" alt="Newcastle University">
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
 </html>
